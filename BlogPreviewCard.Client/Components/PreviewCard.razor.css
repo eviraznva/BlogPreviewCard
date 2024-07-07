@@ -1,0 +1,64 @@
+.card {
+  display: grid;
+  max-width: 20rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, auto);
+  gap: 1rem;
+  margin: 1.65rem;
+  padding: 1.45rem;
+  border: 0.1rem solid #111111;
+  border-radius: 1rem;
+  background-color: #FFF;
+  box-shadow: 7px 7px 0 2px #111111;
+}
+.card .card__img {
+  border-radius: 1rem;
+}
+.card .card__img img {
+  width: 100%;
+  height: auto;
+  border-radius: inherit;
+}
+.card .card__tag {
+  width: fit-content;
+  padding: 0.3rem 1rem;
+  border-radius: 0.3rem;
+  background-color: #F4D04E;
+  font-size: 14px;
+  font-weight: bold;
+}
+.card .card__pub {
+  font-size: 14px;
+  font-weight: 500;
+}
+.card .card__title {
+  font-weight: bolder;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+.card .card__title:hover {
+  color: #F4D04E;
+}
+.card .card__body {
+  color: #7F7F7F;
+  font-size: 14px;
+  font-weight: 400;
+}
+.card .card__avatar {
+  display: flex;
+  width: 2rem;
+  align-items: center;
+}
+.card .card__avatar img {
+  width: 100%;
+  height: auto;
+}
+.card .card__avatar .card__avatar__name {
+  margin-left: 0.6rem;
+  font-size: 14px;
+  font-weight: bolder;
+  text-wrap: nowrap;
+}
+
+/*# sourceMappingURL=PreviewCard.razor.css.map */

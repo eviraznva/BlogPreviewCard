@@ -1,0 +1,11 @@
+﻿services:
+  blogpreviewcard:
+    image: blogpreviewcard
+    build:
+      context: .
+      dockerfile: BlogPreviewCard/Dockerfile
+    ports:
+      - "5001:8080"
+      - "5002:8081"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production

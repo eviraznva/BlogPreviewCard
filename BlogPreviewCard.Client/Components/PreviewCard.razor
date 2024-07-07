@@ -1,0 +1,34 @@
+<div class="card">
+    <div class="card__img"><img src="@ImageUrl" alt="prev-img"/></div>
+    <div class="card__tag">@Tag</div>
+    <div class="card__pub">Published @Pub</div>
+    <div class="card__title">@Title</div>
+    <div class="card__body">@Content</div>
+    <div class="card__avatar">
+        <img src="@AvatarUrl" alt="prev-img"/>
+        <div class="card__avatar__name">@Author</div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public string ImageUrl { get; set; } = "";
+    
+    [Parameter]
+    public string Tag { get; set; } = "";
+    
+    [Parameter]
+    public string Pub { get; set; } = "";
+    
+    [Parameter]
+    public string Title { get; set; } = "";
+    
+    [Parameter]
+    public string Content { get; set; } = "";
+    
+    [Parameter]
+    public string AvatarUrl { get; set; } = "";
+    
+    [Parameter]
+    public string Author { get; set; } = "";
+}
